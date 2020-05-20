@@ -34,10 +34,6 @@ class DownloadData: ObservableObject {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 let covidData = try decoder.decode(Covid.self, from: data)
-                 DispatchQueue.main.async {
-                    self.globalData = covidData.global
-                    self.date = covidData.date
-                }
                 completion(covidData)
             } catch let err {
                // self.erro = "Ops, aconteceu um erro."

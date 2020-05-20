@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		666116B2246CDA1700904725 /* covidWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 666116B1246CDA1700904725 /* covidWatchApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		666116B8246CDA1700904725 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 666116B6246CDA1700904725 /* Interface.storyboard */; };
+		666116BA246CDA1800904725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666116B9246CDA1800904725 /* Assets.xcassets */; };
+		666116C1246CDA1800904725 /* covidWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 666116C0246CDA1800904725 /* covidWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		666116C6246CDA1800904725 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666116C5246CDA1800904725 /* ContentView.swift */; };
+		666116C8246CDA1800904725 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666116C7246CDA1800904725 /* HostingController.swift */; };
+		666116CA246CDA1800904725 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666116C9246CDA1800904725 /* ExtensionDelegate.swift */; };
+		666116CC246CDA1800904725 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666116CB246CDA1800904725 /* ComplicationController.swift */; };
+		666116CE246CDA1800904725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666116CD246CDA1800904725 /* Assets.xcassets */; };
+		666116D1246CDA1800904725 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 666116D0246CDA1800904725 /* Preview Assets.xcassets */; };
+		666116E1246CDA2600904725 /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666116E0246CDA2600904725 /* Covid.swift */; };
+		666116E3246CDB7400904725 /* DownloadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666116E2246CDB7400904725 /* DownloadData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		666116B3246CDA1700904725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 666116A7246CDA1700904725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 666116B0246CDA1700904725;
+			remoteInfo = "covidWatchApp WatchKit App";
+		};
+		666116C2246CDA1800904725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 666116A7246CDA1700904725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 666116BF246CDA1800904725;
+			remoteInfo = "covidWatchApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		666116D8246CDA1800904725 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				666116C1246CDA1800904725 /* covidWatchApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		666116DC246CDA1800904725 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				666116B2246CDA1700904725 /* covidWatchApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		666116AD246CDA1700904725 /* covidWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = covidWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		666116B1246CDA1700904725 /* covidWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "covidWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		666116B7246CDA1700904725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		666116B9246CDA1800904725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		666116BB246CDA1800904725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		666116C0246CDA1800904725 /* covidWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "covidWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		666116C5246CDA1800904725 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		666116C7246CDA1800904725 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		666116C9246CDA1800904725 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		666116CB246CDA1800904725 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		666116CD246CDA1800904725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		666116D0246CDA1800904725 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		666116D2246CDA1800904725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		666116E0246CDA2600904725 /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
+		666116E2246CDB7400904725 /* DownloadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		666116BD246CDA1800904725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		666116A6246CDA1700904725 = {
+			isa = PBXGroup;
+			children = (
+				666116E2246CDB7400904725 /* DownloadData.swift */,
+				666116B5246CDA1700904725 /* covidWatchApp WatchKit App */,
+				666116C4246CDA1800904725 /* covidWatchApp WatchKit Extension */,
+				666116AE246CDA1700904725 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		666116AE246CDA1700904725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				666116AD246CDA1700904725 /* covidWatchApp.app */,
+				666116B1246CDA1700904725 /* covidWatchApp WatchKit App.app */,
+				666116C0246CDA1800904725 /* covidWatchApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		666116B5246CDA1700904725 /* covidWatchApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				666116B6246CDA1700904725 /* Interface.storyboard */,
+				666116B9246CDA1800904725 /* Assets.xcassets */,
+				666116BB246CDA1800904725 /* Info.plist */,
+			);
+			path = "covidWatchApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		666116C4246CDA1800904725 /* covidWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				666116C5246CDA1800904725 /* ContentView.swift */,
+				666116C7246CDA1800904725 /* HostingController.swift */,
+				666116C9246CDA1800904725 /* ExtensionDelegate.swift */,
+				666116CB246CDA1800904725 /* ComplicationController.swift */,
+				666116CD246CDA1800904725 /* Assets.xcassets */,
+				666116D2246CDA1800904725 /* Info.plist */,
+				666116CF246CDA1800904725 /* Preview Content */,
+				666116E0246CDA2600904725 /* Covid.swift */,
+			);
+			path = "covidWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		666116CF246CDA1800904725 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				666116D0246CDA1800904725 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		666116AC246CDA1700904725 /* covidWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 666116DD246CDA1800904725 /* Build configuration list for PBXNativeTarget "covidWatchApp" */;
+			buildPhases = (
+				666116AB246CDA1700904725 /* Resources */,
+				666116DC246CDA1800904725 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				666116B4246CDA1700904725 /* PBXTargetDependency */,
+			);
+			name = covidWatchApp;
+			productName = covidWatchApp;
+			productReference = 666116AD246CDA1700904725 /* covidWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		666116B0246CDA1700904725 /* covidWatchApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 666116D9246CDA1800904725 /* Build configuration list for PBXNativeTarget "covidWatchApp WatchKit App" */;
+			buildPhases = (
+				666116AF246CDA1700904725 /* Resources */,
+				666116D8246CDA1800904725 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				666116C3246CDA1800904725 /* PBXTargetDependency */,
+			);
+			name = "covidWatchApp WatchKit App";
+			productName = "covidWatchApp WatchKit App";
+			productReference = 666116B1246CDA1700904725 /* covidWatchApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		666116BF246CDA1800904725 /* covidWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 666116D5246CDA1800904725 /* Build configuration list for PBXNativeTarget "covidWatchApp WatchKit Extension" */;
+			buildPhases = (
+				666116BC246CDA1800904725 /* Sources */,
+				666116BD246CDA1800904725 /* Frameworks */,
+				666116BE246CDA1800904725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "covidWatchApp WatchKit Extension";
+			productName = "covidWatchApp WatchKit Extension";
+			productReference = 666116C0246CDA1800904725 /* covidWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		666116A7246CDA1700904725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Eduardo Lombardi";
+				TargetAttributes = {
+					666116AC246CDA1700904725 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					666116B0246CDA1700904725 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					666116BF246CDA1800904725 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 666116AA246CDA1700904725 /* Build configuration list for PBXProject "covidWatchApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 666116A6246CDA1700904725;
+			productRefGroup = 666116AE246CDA1700904725 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				666116AC246CDA1700904725 /* covidWatchApp */,
+				666116B0246CDA1700904725 /* covidWatchApp WatchKit App */,
+				666116BF246CDA1800904725 /* covidWatchApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		666116AB246CDA1700904725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		666116AF246CDA1700904725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666116BA246CDA1800904725 /* Assets.xcassets in Resources */,
+				666116B8246CDA1700904725 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		666116BE246CDA1800904725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666116D1246CDA1800904725 /* Preview Assets.xcassets in Resources */,
+				666116CE246CDA1800904725 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		666116BC246CDA1800904725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666116C8246CDA1800904725 /* HostingController.swift in Sources */,
+				666116CC246CDA1800904725 /* ComplicationController.swift in Sources */,
+				666116C6246CDA1800904725 /* ContentView.swift in Sources */,
+				666116CA246CDA1800904725 /* ExtensionDelegate.swift in Sources */,
+				666116E1246CDA2600904725 /* Covid.swift in Sources */,
+				666116E3246CDB7400904725 /* DownloadData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		666116B4246CDA1700904725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 666116B0246CDA1700904725 /* covidWatchApp WatchKit App */;
+			targetProxy = 666116B3246CDA1700904725 /* PBXContainerItemProxy */;
+		};
+		666116C3246CDA1800904725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 666116BF246CDA1800904725 /* covidWatchApp WatchKit Extension */;
+			targetProxy = 666116C2246CDA1800904725 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		666116B6246CDA1700904725 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				666116B7246CDA1700904725 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		666116D3246CDA1800904725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		666116D4246CDA1800904725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		666116D6246CDA1800904725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"covidWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QZE9PCCX24;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "covidWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardolomb.covidWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		666116D7246CDA1800904725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"covidWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = QZE9PCCX24;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "covidWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardolomb.covidWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		666116DA246CDA1800904725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZE9PCCX24;
+				IBSC_MODULE = covidWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "covidWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardolomb.covidWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		666116DB246CDA1800904725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZE9PCCX24;
+				IBSC_MODULE = covidWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "covidWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardolomb.covidWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		666116DE246CDA1800904725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QZE9PCCX24;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardolomb.covidWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		666116DF246CDA1800904725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QZE9PCCX24;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardolomb.covidWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		666116AA246CDA1700904725 /* Build configuration list for PBXProject "covidWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				666116D3246CDA1800904725 /* Debug */,
+				666116D4246CDA1800904725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		666116D5246CDA1800904725 /* Build configuration list for PBXNativeTarget "covidWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				666116D6246CDA1800904725 /* Debug */,
+				666116D7246CDA1800904725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		666116D9246CDA1800904725 /* Build configuration list for PBXNativeTarget "covidWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				666116DA246CDA1800904725 /* Debug */,
+				666116DB246CDA1800904725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		666116DD246CDA1800904725 /* Build configuration list for PBXNativeTarget "covidWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				666116DE246CDA1800904725 /* Debug */,
+				666116DF246CDA1800904725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 666116A7246CDA1700904725 /* Project object */;
+}

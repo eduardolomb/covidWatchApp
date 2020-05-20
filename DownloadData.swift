@@ -13,15 +13,12 @@ class DownloadData: ObservableObject {
     
     @Published var globalData:Global? = nil
     @Published var date = Date()
-//    @Published var resultados:[Int] = [0,0,0,0,0,0]
-//    @Published var jogo:String = ""
-   @Published var erro:String = ""
+    @Published var error:String = ""
     
     init() {
         downloadData(completion: { result in
             DispatchQueue.main.async {
                 self.globalData = result?.global
-//                self.resultados = result?.data.drawing.draw ?? []
             }
         })
         
@@ -36,8 +33,6 @@ class DownloadData: ObservableObject {
             do {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
-
-                print("\(String(data: data, encoding: .utf8))")
                 let covidData = try decoder.decode(Covid.self, from: data)
                  DispatchQueue.main.async {
                     self.globalData = covidData.global
